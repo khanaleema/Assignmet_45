@@ -1,6 +1,8 @@
-function makeShirt(size : string, text :string): void {
-    console.log(`you order a ${size} shirt that says ${text}`)
+function makeShirt(size : string = 'large' ,  text : string = 'I love typescript'): void {
+    console.log(`you have order a ${size} shirt that says ${text}`)
 }
 
-makeShirt('large' , '"i love typescript"')
-makeShirt('small' , '"i need a big shirt')
+// makeShirt();
+// makeShirt ('medium')
+
+makeShirt('small' , 'I need a big shirt to wear')

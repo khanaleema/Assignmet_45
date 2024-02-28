@@ -1,6 +1,7 @@
 "use strict";
-function makeShirt(size, text) {
-    console.log(`you order a ${size} shirt that says ${text}`);
+function makeShirt(size = 'large', text = 'I love typescript') {
+    console.log(`you have order a ${size} shirt that says ${text}`);
 }
-makeShirt('large', '"i love typescript"');
-makeShirt('small', '"i need a big shirt');
+// makeShirt();
+// makeShirt ('medium')
+makeShirt('small', 'I need a big shirt to wear');
