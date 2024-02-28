@@ -1,4 +1,4 @@
-let members: string[] =['aain', 'zaisha', 'aleema', 'aalam', 'saeer'];
-for(let i = 0; i<members.length; i++) {
-     console.log(members[i]);
+let transportation: string[] =['suzuki wagron R', 'civic', 'honda city', 'bike', 'toyota hilux'];
+for(let i = 0; i<transportation.length; i++) {
+     console.log( 'I would like to own' + transportation[i]);
 }
