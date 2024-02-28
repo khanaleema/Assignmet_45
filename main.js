@@ -1,10 +1,10 @@
-var favorite_pizza = ["Margherita", "Pepperoni", "Spicy Beef"];
-// for(let pizza of favorite_pizza) {
-//     console.log(pizza)
-// }
-// console.log ("\n")
-for (var _i = 0, favorite_pizza_1 = favorite_pizza; _i < favorite_pizza_1.length; _i++) {
-    var pizza = favorite_pizza_1[_i];
-    console.log(" I really like ".concat(pizza, " pizza!"));
+"use strict";
+let animals = ["cat", "wolf", "albatros"];
+for (let animal of animals) {
+    console.log(animal);
 }
-console.log("n I really love Pizza!");
+console.log("\n");
+for (let animal of animals) {
+    console.log(` A ${animal} has a tail`);
+}
+console.log("\n all of these are great pets! but i love albatros more");
