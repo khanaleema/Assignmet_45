@@ -1,8 +1,7 @@
-function makeShirt(size : string = 'large' ,  text : string = 'I love typescript'): void {
-    console.log(`you have order a ${size} shirt that says ${text}`)
+function describe_city(city : string , country : string = 'Pakistan') : void {
+    console.log(`${city} is in ${country}`)
 }
 
-// makeShirt();
-// makeShirt ('medium')
-
-makeShirt('small' , 'I need a big shirt to wear')
+describe_city("karachi")
+describe_city("istanbul" , 'Turkey')
+describe_city("lahore" , 'Punjab')
