@@ -1,11 +1,16 @@
-function sandwich(...items: string[]) : void {
-    console.log("Sandwich Order:")
-     for (let i = 0; i < items.length; i++) {
-        console.log(`- ${items[i]}`)
-     }
+type car = {
+    manufacture: string
+    model: string
+    [key: string]: any;
 }
-console.log("enjoy your club sandwich aleema khan")
 
-sandwich('capsicum', 'chicken', 'cheese')
-sandwich('mayo sauce', 'beef')
-sandwich('garlic chicken', 'tomato')
+function creatCar(manufacture: string, model: string, optional: Record<string, any>): car {
+    return{
+        manufacture,
+        model,
+        ...optional
+    }
+}
+
+const mycar: car = creatCar("vagron R", "honda", {color:"black", year: "2024"})
+console.log(mycar)
