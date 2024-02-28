@@ -1,17 +1,5 @@
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
-var places = ['Makkah', 'Turkey', 'Dubai', 'fairyland', 'scotland'];
-console.log('original :' + places);
-console.log('copy' + __spreadArray([], places, true).sort());
-console.log('original :' + places);
-console.log('copy' + __spreadArray([], places, true).sort().reverse());
-console.log('copy' + __spreadArray([], places, true).sort().reverse());
-console.log('original :' + places.sort());
-console.log('original :' + places.sort().reverse());
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var mainguest_js_1 = require("../Ex14 (Guest List)/mainguest.js");
+console.log("n PRINTING NUMBER OF GUEST INVITED");
+console.log("we had finally invited ".concat(mainguest_js_1.guest_list.length, " from exercise 14"));
