@@ -1,13 +1,8 @@
-function makeAlbum(artist, title) {
-    var dictionaries = {
-        artist: artist.charAt(0).toUpperCase() + artist.slice(1),
-        title: title.charAt(0).toUpperCase() + title.slice(1)
-    };
-    return dictionaries;
+function show_magicians(magicians) {
+    for (var _i = 0, magicians_1 = magicians; _i < magicians_1.length; _i++) {
+        var magician_1 = magicians_1[_i];
+        console.log(magician_1.charAt(0).toUpperCase() + magician_1.slice(1));
+    }
 }
-var album = makeAlbum("aalam", "ijazat");
-console.log(album);
-album = makeAlbum("ulfat", "junoon");
-console.log(album);
-album = makeAlbum("hally", "mushk");
-console.log(album);
+var magician = ["saeer aalam", "burhan dil sher", "hashim khan"];
+show_magicians(magician);
