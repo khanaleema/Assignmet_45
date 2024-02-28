@@ -1,4 +1,3 @@
-let personName: string= "AleemaKhan";
-console.log("lowecase:", personName.toLowerCase());
-console.log("uppercase:", personName.toLocaleUpperCase());
-console.log("titlecase:", personName.replace(/\bw/g,c => c.toUpperCase()));
+let quote: string="Life is like riding a bicycle. To keep your balance, you must keep moving.";
+let author: string="Albert Einstein"
+console.log(`${author} once said, "${quote}`);

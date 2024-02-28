@@ -1,4 +1,3 @@
-var personName = "AleemaKhan";
-console.log("lowecase:", personName.toLowerCase());
-console.log("uppercase:", personName.toLocaleUpperCase());
-console.log("titlecase:", personName.replace(/\bw/g, function (c) { return c.toUpperCase(); }));
+var quote = "Life is like riding a bicycle. To keep your balance, you must keep moving.";
+var author = "Albert Einstein";
+console.log("".concat(author, " once said, \"").concat(quote));
