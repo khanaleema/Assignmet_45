@@ -1,9 +1,17 @@
-function make_great(magicians: string[]) : void {
-    for (let i = 0; i < magicians.length; i++) {
-        magicians[i] = magicians[i] +  ' the great'
-        console.log(magicians[i])
+const magicianNames: string[] = ["Harry Porter", "Ron Weasly", "David Copperfield"];
+function showMagicians (magicians: string[]) : void {
+    for (const magician of magicians) {
+        console.log(magician);
     }
 }
+function make_great(magicians : string[]) : string[] {
+    const greatMagicians: string[] = magicians.map(magician => `the Great ${magician}`);
+    return greatMagicians;
+}
+const greatMagicianNames: string[] = make_great(magicianNames);
 
-const magicians: string[] = ["Harry Porter", "Ron Weasly", "David Copperfield"];
-make_great(magicians)
+console.log("Original Magicians:");
+showMagicians(magicianNames);
+
+console.log("\nGreat Magicians:");
+showMagicians(greatMagicianNames);
