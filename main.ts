@@ -1,12 +1,16 @@
-let current_users : string [] = ["admin" , "halay" , "burhan" , "noor"]
-let new_users : string [] = ["admin" , "khan" , "aalam" , "missi"]
+let numbers : number [] = [1,2,3,4,5,6,7,8,9]
+ for (let number of numbers) {
 
-let current_users_lower : string [] = current_users.map(user => user.toLowerCase())
+    if (number === 1) {
+        console.log (`${number}st`) 
 
-for (let new_user of new_users) {
-    if (current_users_lower.includes (new_user.toLowerCase())) {
-        console.log(`Sorry ${new_user}, that name is taken`)
- } else {
-    console.log(`Yes ${new_user}, is still in avaliable list`)
+    } else if (number === 2) {
+        console.log (`${number}nd`)
+
+    } else if (number === 3) {
+        console.log (`${number}rd`)
+
+    } else {
+        console.log (`${number}th`)
+    }
  }
-}
