@@ -1,16 +1,13 @@
-let numbers : number [] = [1,2,3,4,5,6,7,8,9]
- for (let number of numbers) {
+let favorite_pizza : string [] = ["Margherita" , "Pepperoni" , "Spicy Beef"]
 
-    if (number === 1) {
-        console.log (`${number}st`) 
+// for(let pizza of favorite_pizza) {
+//     console.log(pizza)
+// }
 
-    } else if (number === 2) {
-        console.log (`${number}nd`)
+// console.log ("\n")
 
-    } else if (number === 3) {
-        console.log (`${number}rd`)
+for(let pizza of favorite_pizza) {
+    console.log(` I really like ${pizza} pizza!`)
+}
 
-    } else {
-        console.log (`${number}th`)
-    }
- }
+console.log ("n I really love Pizza!")
