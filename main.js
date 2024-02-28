@@ -1,16 +1,14 @@
-var magicianNames = ["Harry Porter", "Ron Weasly", "David Copperfield"];
-function showMagicians(magicians) {
-    for (var _i = 0, magicians_1 = magicians; _i < magicians_1.length; _i++) {
-        var magician = magicians_1[_i];
-        console.log(magician);
+function sandwich() {
+    var items = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        items[_i] = arguments[_i];
+    }
+    console.log("Sandwich Order:");
+    for (var i = 0; i < items.length; i++) {
+        console.log("- ".concat(items[i]));
     }
 }
-function make_great(magicians) {
-    var greatMagicians = magicians.map(function (magician) { return "the Great ".concat(magician); });
-    return greatMagicians;
-}
-var greatMagicianNames = make_great(magicianNames);
-console.log("Original Magicians:");
-showMagicians(magicianNames);
-console.log("\nGreat Magicians:");
-showMagicians(greatMagicianNames);
+console.log("enjoy your club sandwich aleema khan");
+sandwich('capsicum', 'chicken', 'cheese');
+sandwich('mayo sauce', 'beef');
+sandwich('garlic chicken', 'tomato');
