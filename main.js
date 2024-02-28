@@ -1,21 +1,46 @@
-var car = "honda";
-console.log("is car == 'honda'? predict true");
-console.log(car == 'honda');
-console.log("is car != 'suzki vegron r'? predict false");
-console.log(car == 'suzuki vegron r');
-console.log("is 3 <= 5 ? predict true");
-console.log(3 <= 5);
-console.log("is car == 'SUZUKI VAGRON R'? predict false");
-console.log(car == 'SUZUKI VAGRON R');
-console.log("is car.lenght != 15 ? predict true");
-console.log(car.length != 15);
-console.log("is 10 <= 2? predict false");
-console.log(10 <= 2);
-console.log("is 2 < 6? predict true");
-console.log(2 < 6);
-console.log("is 8 <= 6? predict false");
-console.log(8 <= 6);
-console.log("is 42 == 42 true");
-console.log(42 == 42);
-console.log("is 72 >= 83? predict false");
-console.log(72 >= 83);
+"use strict";
+let name_1 = "burhan";
+let name_2 = "burhan dil";
+let name_3 = "burhan dil sher";
+if (name_1 == name_3) {
+    console.log("names are equal");
+}
+else {
+    console.log("names are not equal");
+}
+if (name_1 != name_2) {
+    console.log("names are equal");
+}
+else {
+    console.log("names are not equal");
+}
+if (name_1 == name_3) {
+    console.log("names are equal");
+}
+let age_1 = 24;
+let age_2 = 18;
+if (age_2 == 18) {
+    console.log("eligible fot vote");
+}
+if (age_1 == 24) {
+    console.log("eligible fot vote in older category");
+}
+if (age_1 >= age_2) {
+    console.log("younger");
+}
+if (age_2 <= age_1) {
+    console.log("older");
+}
+if (age_1 == 24 && age_2 == 18) {
+    console.log(" person is eligible for vote");
+}
+if (age_1 == 24 || age_2 != 18) {
+    console.log(" person is eligible not for vote");
+}
+let books = ["peer e kamil", "dehshat e wehshat", "abbay e hayat", "namal"];
+if (books.includes("dehshat e wehshat")) {
+    console.log("dehshat e wehsat is in book list");
+}
+if (!books.includes("musaaf")) {
+    console.log("musaaf in not include in an array");
+}
