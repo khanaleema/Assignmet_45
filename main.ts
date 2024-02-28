@@ -1,15 +1,21 @@
-let age : number = 100
+let favorite_furits : string [] = ["mango" , "apple" , "strawberry" , "watermelon" , "kivi"]
 
-if (age < 2) {
-    console.log("you are a babay")
-} else if (age < 4)  { 
-    console.log("you are a toddler")
-} else if (age < 13) {
-    console.log("you are a kid")
-} else if (age < 20) {
-    console.log("you are a teenager")
-} else if (age < 65) {
-    console.log("you are a adult")
-} else {
-    console.log("you are older")
-} 
+if (favorite_furits.includes ("mango")) {
+    console.log ("mango")
+}
+
+if (favorite_furits.includes ("apple")) {
+    console.log ("apple")
+}
+
+if (favorite_furits.includes ("strawberry")) { 
+    console.log ("strawberry")
+}
+
+if (favorite_furits.includes ("watermelon")) {
+    console.log ("you really like oranges")
+}
+
+if (favorite_furits.includes ("kivi")) {
+    console.log ("you really like oranges")
+}

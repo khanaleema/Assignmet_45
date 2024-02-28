@@ -1,20 +1,16 @@
-"use strict";
-let age = 100;
-if (age < 2) {
-    console.log("you are a babay");
+var favorite_furits = ["mango", "apple", "strawberry", "watermelon", "kivi"];
+if (favorite_furits.includes("mango")) {
+    console.log("mango");
 }
-else if (age < 4) {
-    console.log("you are a toddler");
+if (favorite_furits.includes("apple")) {
+    console.log("apple");
 }
-else if (age < 13) {
-    console.log("you are a kid");
+if (favorite_furits.includes("strawberry")) {
+    console.log("strawberry");
 }
-else if (age < 20) {
-    console.log("you are a teenager");
+if (favorite_furits.includes("watermelon")) {
+    console.log("you really like oranges");
 }
-else if (age < 65) {
-    console.log("you are a adult");
-}
-else {
-    console.log("you are older");
+if (favorite_furits.includes("kivi")) {
+    console.log("you really like oranges");
 }
