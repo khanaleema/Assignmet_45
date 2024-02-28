@@ -1,4 +1,2 @@
-var personName = "\n\t ALEEMA KHAN\t\n";
-console.log(personName);
-var stripped = personName.trim();
-console.log(stripped);
+var favoriteNumber = 17;
+console.log("My favorite number is ".concat(favoriteNumber));
